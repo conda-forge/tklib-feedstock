@@ -1,6 +1,6 @@
 {% set name = "tklib" %}
-{% set version = "0.7" %}
-{% set sha256 = "b28d0e92bf56d0c2b106b7a2b9ad1f82f59db3864e25e5a3541b52d9c3f56a97" %}
+{% set version = "0.9" %}
+{% set sha256 = "2579967020d493ca73e1adf327d4fb31a37e9754fdf29f763a8b245cd037f946" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
   run:
     - tk
     - tcllib
-    
+
 test:
   commands:
     - echo package require cursor;exit | tclsh --
